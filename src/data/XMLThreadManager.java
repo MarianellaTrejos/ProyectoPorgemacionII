@@ -14,10 +14,7 @@ import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
 import org.jdom.output.XMLOutputter;
 import threads.CircleThread;
-import threads.CircleThread1;
-import threads.CircleThread2;
-import threads.CircleThread3;
-import threads.CircleThread4;
+
 
 public class XMLThreadManager {
     
@@ -97,107 +94,7 @@ public class XMLThreadManager {
         //FINALMENTE: GUARDAR EN DD
         storeXML();
     }
-    public void insertThread1(CircleThread1 circleThread1) throws IOException{
-        //INSERTAMOS EN EL DOCUMENTO EN MEMORIA
-        //para insertar en xml, primero se crean los elementos
-        
-        //crear el estudiante
-        Element eCircle = new Element("Circle1");
-        //agregamos atributo
-        Element edelaytime= new Element("DelayTime");
-       edelaytime.addContent(circleThread1.getDelayTime());
-        //crear el elemento nombre
-        Element eMycircle = new Element("MyCircle");
-        eMycircle.addContent(circleThread1.getMyCircle1());
-        
-        
-        
-        //agregar al elemento student el contenido de nombre y nota
-        eCircle.addContent(edelaytime);
-        eCircle.addContent(eMycircle);
-       
-        //AGREGAMOS AL ROOT
-        this.root.addContent(eCircle);
-        
-        //FINALMENTE: GUARDAR EN DD
-        storeXML();
-    }//end insert
-    public void insertThread2(CircleThread2 circleThread2) throws IOException{
-        //INSERTAMOS EN EL DOCUMENTO EN MEMORIA
-        //para insertar en xml, primero se crean los elementos
-        
-        //crear el estudiante
-        Element eCircle = new Element("Circle2");
-        //agregamos atributo
-        Element edelaytime= new Element("DelayTime");
-       edelaytime.addContent(circleThread2.getDelayTime());
-        //crear el elemento nombre
-        Element eMycircle = new Element("MyCircle");
-        eMycircle.addContent(circleThread2.getMyCircle2());
-        
-        
-        
-        //agregar al elemento student el contenido de nombre y nota
-        eCircle.addContent(edelaytime);
-        eCircle.addContent(eMycircle);
-       
-        //AGREGAMOS AL ROOT
-        this.root.addContent(eCircle);
-        
-        //FINALMENTE: GUARDAR EN DD
-        storeXML();
-    }//end insert
-    public void insertThread3(CircleThread3 circleThread3) throws IOException{
-        //INSERTAMOS EN EL DOCUMENTO EN MEMORIA
-        //para insertar en xml, primero se crean los elementos
-        
-        //crear el estudiante
-        Element eCircle = new Element("Circle3");
-        //agregamos atributo
-        Element edelaytime= new Element("DelayTime");
-       edelaytime.addContent(circleThread3.getDelayTime());
-        //crear el elemento nombre
-        Element eMycircle = new Element("MyCircle");
-        eMycircle.addContent(circleThread3.getMyCircle3());
-        
-        
-        
-        //agregar al elemento student el contenido de nombre y nota
-        eCircle.addContent(edelaytime);
-        eCircle.addContent(eMycircle);
-       
-        //AGREGAMOS AL ROOT
-        this.root.addContent(eCircle);
-        
-        //FINALMENTE: GUARDAR EN DD
-        storeXML();
-    }//end insert
-    
-    public void insertThread4(CircleThread4 circleThread4) throws IOException{
-        //INSERTAMOS EN EL DOCUMENTO EN MEMORIA
-        //para insertar en xml, primero se crean los elementos
-        
-        //crear el estudiante
-        Element eCircle = new Element("Circle4");
-        //agregamos atributo
-        Element edelaytime= new Element("DelayTime");
-       edelaytime.addContent(circleThread4.getDelayTime());
-        //crear el elemento nombre
-        Element eMycircle = new Element("MyCircle");
-        eMycircle.addContent(circleThread4.getMyCircle4());
-        
-        
-        
-        //agregar al elemento student el contenido de nombre y nota
-        eCircle.addContent(edelaytime);
-        eCircle.addContent(eMycircle);
-       
-        //AGREGAMOS AL ROOT
-        this.root.addContent(eCircle);
-        
-        //FINALMENTE: GUARDAR EN DD
-        storeXML();
-    }//end insert
+   
     
     
     

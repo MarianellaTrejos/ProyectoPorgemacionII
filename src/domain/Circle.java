@@ -78,8 +78,6 @@ public void setPointPosition1(Point pointPosition) {
         return "Circle{" + "identification=" + identification + ", size=" + size + '}';
     }
 
-    public Object get(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 
 }
